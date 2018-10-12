@@ -10,19 +10,16 @@ namespace lab6
     {
         static void Main(string[] args)
         {
-            int x = 6;
-            int y = 4;
-            Console.WriteLine(y *= 2);
-            int z = y = 3;
-            int s;
-            Console.WriteLine(z);
-            s = x | 1;
+            //double GPA = 1.95;
+            //Console.WriteLine("You are " + (GPA >= 2.0 ? "pass" : "fall"));
+            //int x = 10, y = 5;
+            //Console.WriteLine("x > y : " + (x > y));
+            Console.WriteLine("x < y : " + (x < y));
+            Console.WriteLine("x >= y : " + (x >= y));
+            Console.WriteLine("x <= y : " + (x <= y));
+            Console.WriteLine("x == y : " + (x == y));
+            Console.WriteLine("x != y : " + (x != y));
 
-            Console.WriteLine(s); // x = x | 1 = 1 // x = 6+1 = 7
-            s = x + 3;
-            Console.WriteLine(s); // ค่าจากบรรทัดบน 7 + 3 = 10
-
-            Console.WriteLine(x /= 2);
         }
     }
 }
