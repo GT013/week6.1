@@ -10,15 +10,21 @@ namespace lab6
     {
         static void Main(string[] args)
         {
-            object[] myary = {"nantikan",4.00d,13, "April",2542  };
-            testparas(myary);
-            Console.ReadKey();
-        }
-        static void testparas(params object[] detail)
-        {
-            foreach(object t in detail)
-                Console.Write(t + " ");
-            Console.ReadKey();
+            long myLong = long.MaxValue;
+            int myInt = (int)myLong;   // Explicit conversion
+
+            float heightInMeters = 1.74f; // Explicit conversion
+            double maxHeight = heightInMeters; // Implicit
+            double minHeight = (double)heightInMeters; // Explicit
+            float actualHeight = (float)maxHeight; // Explicit
+
+            Console.WriteLine(myLong);
+            Console.WriteLine(myInt);
+            Console.WriteLine(heightInMeters);
+            Console.WriteLine(maxHeight);
+            Console.WriteLine(minHeight);
+            Console.WriteLine(actualHeight);
+
         }
     }
 }
