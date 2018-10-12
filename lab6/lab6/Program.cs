@@ -10,25 +10,19 @@ namespace lab6
     {
         static void Main(string[] args)
         {
-            int x = 17;
-            double y = x / 4.0;
-            double z = y * y;
-            Console.WriteLine(y);
+            int x = 6;
+            int y = 4;
+            Console.WriteLine(y *= 2);
+            int z = y = 3;
+            int s;
             Console.WriteLine(z);
-            Console.WriteLine("---------------------------------"); 
-            int a = 5;
-            int b = 4;
-            Console.WriteLine(a + b); // 9
+            s = x | 1;
 
-            Console.WriteLine(a + (b++)); // 5 + 4 = 9
-            Console.WriteLine(a + b); // 5 + 5 = 10
+            Console.WriteLine(s); // x = x | 1 = 1 // x = 6+1 = 7
+            s = x + 3;
+            Console.WriteLine(s); // ค่าจากบรรทัดบน 7 + 3 = 10
 
-            Console.WriteLine(a + (++b)); // 5 + 5 +1 =11
-            Console.WriteLine(a + b); // 5 + 6 = 11
-
-           Console.WriteLine(14 / a); // 2
-            Console.WriteLine(14 % a); // 4
-
+            Console.WriteLine(x /= 2);
         }
     }
 }
