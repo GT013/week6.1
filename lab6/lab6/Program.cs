@@ -10,15 +10,25 @@ namespace lab6
     {
         static void Main(string[] args)
         {
-            object[] myary = {"nantikan",4.00d,13, "April",2542  };
-            testparas(myary);
-            Console.ReadKey();
-        }
-        static void testparas(params object[] detail)
-        {
-            foreach(object t in detail)
-                Console.Write(t + " ");
-            Console.ReadKey();
+            int x = 17;
+            double y = x / 4.0;
+            double z = y * y;
+            Console.WriteLine(y);
+            Console.WriteLine(z);
+            Console.WriteLine("---------------------------------"); 
+            int a = 5;
+            int b = 4;
+            Console.WriteLine(a + b); // 9
+
+            Console.WriteLine(a + (b++)); // 5 + 4 = 9
+            Console.WriteLine(a + b); // 5 + 5 = 10
+
+            Console.WriteLine(a + (++b)); // 5 + 5 +1 =11
+            Console.WriteLine(a + b); // 5 + 6 = 11
+
+           Console.WriteLine(14 / a); // 2
+            Console.WriteLine(14 % a); // 4
+
         }
     }
 }
