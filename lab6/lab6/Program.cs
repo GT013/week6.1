@@ -10,12 +10,10 @@ namespace lab6
     {
         static void Main(string[] args)
         {
-            string hello = "Hello";
-            string world = "World";
-            string helloWorld = hello + world;
-            Console.WriteLine(helloWorld);
-            string helloWorld555 = helloWorld + " " + 555;
-            Console.WriteLine(helloWorld555);
+            double d = 5e9d;
+            Console.WriteLine(d);
+            int i = (int)d;
+            Console.WriteLine(i);
 
         }
     }
